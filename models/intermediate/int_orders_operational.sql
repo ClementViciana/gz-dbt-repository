@@ -20,4 +20,3 @@ renamed as (
 select orders_id, date_date,  sum(revenue) as revenue, sum(quantity) as quantity, sum(purchase_cost) as purchase_cost,  sum(margin) as margin, sum(margin)+sum(shipping_fee)-sum(logcost)-sum(ship_cost) as operationnal_margin
 from renamed
 GROUP BY orders_id, date_date
-order by quantity desc
